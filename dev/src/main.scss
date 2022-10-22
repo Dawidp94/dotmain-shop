@@ -1,0 +1,10 @@
+:root{
+    --font-comfortaa: 'Comfortaa', cursive;
+    --font-poppins: 'Poppins', sans-serif;
+    --color-light: #fffbed;
+}
+body{
+    font-size: 16px;
+    font-family: var(--font-comfortaa);
+    background-color: var(--color-light);
+}

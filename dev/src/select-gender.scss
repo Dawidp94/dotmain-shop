@@ -1,0 +1,72 @@
+.select-gender-container{
+    display: flex;
+    flex-direction: column;
+
+    .gender-woman-container, .gender-man-container{
+        background-size: cover;
+        // width: 50%;
+        min-height: 100vh;
+        transition: all 1s ease-in-out;
+        position: relative;
+    }
+    .gender-woman-container{
+    
+        background-image: url('/img/foto-main-woman.jpg');
+
+    }
+    .gender-man-container{
+        background-image: url('/img/foto-main-man.jpg');   
+    }   
+}
+
+.gender-header{
+    font-family: var(--font-poppins);
+    font-size: 10rem;
+    color: white;
+    writing-mode: vertical-lr;
+    padding-top: 3rem;
+    opacity: .8;
+    margin: 0;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    top: 2rem;
+
+}
+
+.gender-man-container:hover .gender-header {
+   transform: 
+        rotate(-90deg)
+        translate(0px, 100px)
+        scale(1.2)
+        // scale(1.5);
+}
+.gender-woman-container:hover .gender-header {
+    transform: 
+         rotate(-90deg)
+         translate(30px, 80px)
+         scale(1.2)
+        //  scale(1.5);
+
+ }
+
+ .gender-title-man, .gender-title-woman, .gender-subtitle-man, .gender-subtitle-woman{
+    color: lightgray;
+ }
+
+ .gender-title-woman, .gender-title-man{
+    font-size: 3rem;
+    margin: 0 0 0 3rem;
+ }
+ .gender-subtitle-man{
+    margin: 30rem 0 0 3rem;
+ }
+ .gender-subtitle-woman, .gender-title-woman{
+    text-align: end;
+ }
+ .gender-subtitle-woman{
+    margin: 25rem 3rem 0 0;
+ }
+ .gender-title-woman{
+    margin-right: 3rem;
+ }
+

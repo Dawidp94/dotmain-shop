@@ -1,0 +1,154 @@
+@media only screen and (min-width: 500px){
+    .nav-search-container{
+        width: 60%;
+        padding: 2rem 0 2rem 3rem;
+    }
+    .nav-search-input{
+        width: 80%
+    }
+    .nav-basket-container{
+        width: 40%;
+        gap:2rem
+    }
+    .demo-icon{
+        font-size: 2rem
+    }
+    .icon-search{
+        left: 3.5rem
+    }
+};
+@media only screen and (min-width: 1000px){
+    .select-gender-container{
+
+        flex-direction: row;
+    }
+    .gender-woman-container, .gender-man-container{
+        width: 50%;
+    }
+    .nav-basket-word
+    {
+        display: block;
+    }
+    .nav-basket-account{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .demo-icon{
+        font-size: 1.5rem
+    }
+    .nav-basket-container{
+        margin-right: 2rem;
+        gap:1rem
+    }
+    .icon-shopping-basket{
+        margin-right: 4px;
+    }
+     .gender-man-container:hover{
+        width: 70%;
+    }
+    .gender-woman-container:hover{
+        width: 70%;
+}
+.section-recommend{
+    
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10rem;
+}
+.recommend-foto-container{
+    margin-left: 2rem;
+    width: 60%;
+    height: 75vh;
+}
+.recommend-container{
+    padding: 3rem;
+
+}
+.my-slides-box:nth-child(n+2){
+    display: block;
+}
+.my-slides-box{
+    width: 30%;
+
+    }
+    .selected-for-you-title {
+        width: 70%;
+    }
+    .my-slides-elements{
+        width: 100%;
+        .name{
+            font-size: 1.2rem;
+            margin: 1.2rem 0 0 0;
+        }
+        .description{
+            
+            margin: .2rem 0;
+        }
+        .prise{
+            margin: 0;
+            font-family: var(--font-poppins);
+            font-size: 1.5rem;
+            span{
+                font-size: 1rem;
+            }
+        }
+    }
+    .my-slides-box img{
+        width: 100%;
+    }
+    .selected-for-you-button{
+        top:60%;
+    
+    }
+    .tag-instagram-container{
+        flex-direction: row;
+        img{
+            height: 10rem;
+        }
+       
+        // margin: auto;
+    }
+    .tag-instagram-foto-box{
+        overflow: visible;
+        // width: 30vw;
+    }
+    .icon-instagram-2{
+        font-size: 4rem;
+    }
+    .newslatter-send-box{
+        width: 50%;
+        margin: auto;
+    }
+    .newsletter-description{
+        width: 40%;
+    }
+    .newslatter-send-box{
+        .newsletter-button{
+            width: 6rem;
+    }
+    }
+    
+}
+@media only screen and (min-width: 1200px){
+    .tag-instagram-container{
+        margin: auto;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .nav-search-container{
+        width: 40%;
+        padding: 2rem 0 2rem 20rem;
+    }
+    .icon-search{
+        left: 20.5rem
+    }
+    .nav-basket-account{
+        width: 20%;
+    }
+    .nav-basket-container{
+        justify-content: end;
+    }
+}
