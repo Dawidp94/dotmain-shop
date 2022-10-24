@@ -240,9 +240,10 @@
                         </div> 
                     </div>
                 </div>
-              
-                <button class="selected-for-you-button left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="selected-for-you-button right" onclick="plusDivs(1)">&#10095;</button>
+                <i class="demo-icon icon-angle-left selected-for-you-button left" onclick="plusDivs(-1)"></i>
+                <i class="demo-icon icon-angle-right selected-for-you-button right" onclick="plusDivs(1)"></i>
+                <!-- <button class="selected-for-you-button left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="selected-for-you-button right" onclick="plusDivs(1)">&#10095;</button> -->
               </div>
         </section>
         <section class="tag-instagram">
@@ -258,20 +259,51 @@
             </div>
         </section>
 
+        <section class="info-container">
+            <div class="info-box">
+                <img src="/img/foto-info/delivery.png" alt="delivery">
+                <h4 class="info-title">Free delivery and return</h4>
+                <p class="info-description">Free and convenient ways to ship your order. Several return options to choose from.</p>
+            </div>
+            <div class="info-box">
+                <img src="/img/foto-info/24h.png" alt="24h">
+                <h4 class="info-title">Shipping in 24 hours</h4>
+                <p class="info-description">Products ordered by 04 pm ship the same day!</p>
+            </div>
+            <div class="info-box">
+                <img src="/img/foto-info/discount.png" alt="discount">
+
+                <h4 class="info-title">Save with dotmain Club</h4>
+                <p class="info-description">Set aside 10% of the value from each purchase and shop up to 50% off!</p>
+            </div>
+        </section>
+
         <section class="newsletter-container">
             <div class="newsletter-title">Newsletter</div>
             <div class="newsletter-description">SIGN UP FOR OUR NOTIFICATIONS ABOUT NEW OFFERS AND SPECIAL PROMOTIONAL ACTIONS</div>
-            <div class="newslatter-send-box">
-                <input class="newsletter-input" type="text" placeholder="enter your e-mail address...">
-                <button class="newsletter-button">sign up</button>
+            <div class="newsletter-send-box">
+                <div class="newsletter-send-label">
+                    <label>
+                        <input type="radio" name="gender" value="man"> man
+                      </label>
+                     
+                      <label>
+                        <input type="radio" name="gender" value="woman"> woman
+                      </label> 
+                </div>
+                <div class="newsletter-box-input">
+                    <input class="newsletter-input" type="text" placeholder="enter your e-mail address...">
+                    <button class="newsletter-button">sign up</button>
+                </div>
             </div>
             <div class="newsletter-social-media">
-                <p>dd</p>
-                <p>dd</p>
-                <p>dd</p>
-                <p>dd</p>
+                <i class="demo-icon icon-facebook-circled-1 scale-2"></i>
+               <div class="demo-icon-box"><i class="demo-icon icon-instagram white"></i></div>
+               <i class="demo-icon icon-pinterest-circled scale-2"></i>
+               <div class="demo-icon-box"><i class="demo-icon icon-youtube-play white scale-1"></i></div>
             </div>
         </section>
+       
     </main>
     <script src="/app.js"></script>
     

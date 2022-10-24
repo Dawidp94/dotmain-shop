@@ -38,9 +38,12 @@
     padding:0 2rem;
     margin-inline: auto;
     text-align: center;
+    margin-bottom: 1rem;
     
 }
-.newslatter-send-box{
+.newsletter-send-box{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     .newsletter-input{
         // width: 25%;
@@ -70,9 +73,36 @@
     }
 }
 
+.newsletter-send-label{
+    margin-bottom: .7rem;
+    label{
+        margin-inline: 1rem;
+    }
+}
+
 .newsletter-social-media{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
+  
+}
+.demo-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+}
+.white{
+    color: white;
+}
+.scale-2{
+    transform: scale(1.5);
+}
+.scale-1{
+    transform: scale(.8);
 }

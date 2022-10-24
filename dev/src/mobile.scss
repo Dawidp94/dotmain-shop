@@ -117,17 +117,27 @@
     .icon-instagram-2{
         font-size: 4rem;
     }
-    .newslatter-send-box{
+    .newsletter-send-box{
         width: 50%;
         margin: auto;
     }
     .newsletter-description{
         width: 40%;
     }
-    .newslatter-send-box{
+    .newsletter-send-box{
         .newsletter-button{
             width: 6rem;
     }
+    }
+    .info-container{
+        flex-direction: row;
+    }
+    .info-box{
+        width: 30%;
+        margin-bottom: 5rem;
+    }
+    .info-descripton{
+        width: auto;
     }
     
 }
