@@ -107,8 +107,6 @@
         img{
             height: 10rem;
         }
-       
-        // margin: auto;
     }
     .tag-instagram-foto-box{
         overflow: visible;
@@ -139,6 +137,36 @@
     .info-descripton{
         width: auto;
     }
+    footer{
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 2rem 3rem;
+    }
+    
+    .footer-arrow{
+        display: none;
+    }
+    .footer-box{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .footer-title-box{
+            margin: 0;
+            .footer-title{
+                font-size: 1rem;
+            }
+        }
+        .footer-description{
+            font-size: .8rem;
+            width: 80%;
+        }
+    }
+    .demo-icon{
+        font-size: 2rem;
+    }
+    
     
 }
 @media only screen and (min-width: 1200px){

@@ -515,7 +515,7 @@ body {
   align-items: center; }
   .my-slides-box img {
     width: 60%;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     filter: grayscale(0.7); }
   .my-slides-box img:hover {
     transform: scale(1.1);
@@ -617,7 +617,9 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  background-color: white; }
+  background-color: black;
+  color: white;
+  padding-bottom: 3rem; }
 
 .newsletter-title {
   display: inline-block;
@@ -635,7 +637,7 @@ body {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -659,14 +661,14 @@ body {
   .newsletter-send-box .newsletter-input {
     width: 60%;
     padding: .5rem;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 2rem; }
   .newsletter-send-box .newsletter-input::placeholder {
     font-size: .7rem; }
   .newsletter-send-box .newsletter-button {
     width: 25%;
     padding: .5rem;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 2rem;
     cursor: pointer;
     text-transform: uppercase;
@@ -691,19 +693,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background-color: black; }
+  background-color: white;
+  transition: all .2s ease-in-out; }
+
+.demo-icon-box:hover {
+  cursor: pointer;
+  transform: scale(1.2); }
 
 .white {
-  color: white; }
+  color: black; }
+
+.demo-icon {
+  transition: all .2s ease-in-out;
+  font-size: 2rem; }
+
+.demo-icon-2 {
+  font-size: 1.3rem; }
+
+.demo-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2); }
 
 .scale-2 {
-  transform: scale(1.5); }
+  transform: scale(1.7); }
 
 .scale-1 {
   transform: scale(0.8); }
+
+.newsletter-background-images img {
+  width: 200px;
+  margin: 0;
+  display: flex;
+  flex-direction: row; }
 
 .info-container {
   display: flex;
@@ -730,6 +754,81 @@ body {
 .info-description {
   text-align: center;
   width: 75%; }
+
+.galery-slider-container {
+  width: 100%;
+  overflow: hidden; }
+
+.galery-slider-elements {
+  text-align: center;
+  display: flex; }
+  .galery-slider-elements img {
+    animation: roll 150s infinite linear;
+    width: 150px;
+    transition: all .2s ease-in-out;
+    filter: grayscale(0.7); }
+  .galery-slider-elements img:hover {
+    cursor: pointer;
+    filter: grayscale(0); }
+
+@keyframes roll {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-1650px); }
+  100% {
+    transform: translateX(0px); } }
+footer {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.footer-box {
+  transition: all 1s ease-in-out;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden; }
+  .footer-box .footer-title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%; }
+    .footer-box .footer-title-box .footer-title {
+      width: 90%;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      margin: 1.5rem 1rem 1rem 1rem; }
+    .footer-box .footer-title-box .footer-arrow {
+      width: 10%;
+      margin-right: 2rem;
+      transform: rotate(-90deg);
+      font-size: 2rem; }
+    .footer-box .footer-title-box .footer-arrow-change {
+      transform: rotate(90deg); }
+  .footer-box .footer-description {
+    font-size: 1rem; }
+
+.last {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  font-size: .8rem;
+  font-family: var(--font-poppins);
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer-box-change {
+  height: 180px; }
+
+.footer-box-change-buy {
+  height: 100px; }
 
 @media only screen and (min-width: 500px) {
   .nav-search-container {
@@ -851,7 +950,32 @@ body {
     margin-bottom: 5rem; }
 
   .info-descripton {
-    width: auto; } }
+    width: auto; }
+
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 2rem 3rem; }
+
+  .footer-arrow {
+    display: none; }
+
+  .footer-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .footer-box .footer-title-box {
+      margin: 0; }
+      .footer-box .footer-title-box .footer-title {
+        font-size: 1rem; }
+    .footer-box .footer-description {
+      font-size: .8rem;
+      width: 80%; }
+
+  .demo-icon {
+    font-size: 2rem; } }
 @media only screen and (min-width: 1200px) {
   .tag-instagram-container {
     margin: auto;
