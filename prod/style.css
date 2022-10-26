@@ -320,7 +320,8 @@ body {
 .nav-container {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  gap: .8rem; }
 
 .nav-menu-container {
   width: 25%;
