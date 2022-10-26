@@ -337,6 +337,7 @@ body {
     margin-bottom: 5px; }
 
 .nav-search-container {
+  width: 60%;
   position: relative;
   padding: 2rem 0 2rem 1rem;
   display: flex; }
@@ -347,9 +348,10 @@ body {
     padding-left: 40px; }
 
 .nav-basket-container {
+  width: 40%;
   display: flex;
   justify-content: center;
-  gap: .5rem; }
+  gap: .3rem; }
 
 .icon-search {
   position: absolute;
@@ -360,7 +362,7 @@ body {
 .nav-basket-word {
   display: none; }
 
-.demo-icon {
+.nav-basket-account .demo-icon {
   font-size: 1.3rem; }
 
 .select-gender-container {
